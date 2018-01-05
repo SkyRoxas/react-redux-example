@@ -5,9 +5,9 @@ import {fetchPost} from '../actions'
 class ItemList extends Component {
   componentDidMount(){
     this.props.fetchData('https://x-mall-api.beta2.hiiir-inc.com/api/app/v1/showCase?imageSize=small&showcaseGroup=home')
-    console.log(this.props)
   }
   render(){
+    console.log(this.props)
     return(
       <h1>Hello World !!</h1>
     )
