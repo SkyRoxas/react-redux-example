@@ -1,0 +1,4 @@
+.switch{background-color:#cccccc;width:60px;height:30px;border-radius:15px;}
+.switch>.btn{background-color:#444444;width:30px;height:30px;border-radius:15px;}
+.switch-on{background-color:#aaffaa;}
+.switch-on>.btn{background-color:#006600;margin-left:30px;}
