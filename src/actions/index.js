@@ -14,7 +14,9 @@ export const fetchPost = (url) => ((dispatch) => {
         throw Error(response.statusText)
       }
       dispatch(fetchPostRequest(false))
-      dispatch(fetchPostSuccess(response))
+      return response
     })
+    .then((response)=>response.json())
+    .then((items)=> dispatch(fetchPostSuccess(items)))
     .catch(()=> dispatch(fetchPostFailure(true)))
 })
